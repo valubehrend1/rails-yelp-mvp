@@ -8,9 +8,9 @@ class RestaurantsController < ApplicationController
     end
 
     def create
-        @restaurant = Restaurant.new
+        @restaurant = Restaurant.new(restaurant_params)
         @restaurant.save
-        redirect_to restaurant_path
+        redirect_to @restaurant
     end
 
     def show
@@ -20,6 +20,6 @@ class RestaurantsController < ApplicationController
     private
 
     def restaurant_params
-        params.require(:restaurant).permit(:name, :address)
+        params.require(:restaurant).permit(:name, :address, :category, :phone_number)
     end
 end
