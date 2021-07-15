@@ -12,11 +12,32 @@
 @import "components/index";
 @import "pages/index";
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 10px;
+    row-gap: 10px;
     flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-restaurant-link {
+    color: white;
+    text-decoration: none;
+}
+
+.info-restaurant-link:hover {
+    color: white;
 }
