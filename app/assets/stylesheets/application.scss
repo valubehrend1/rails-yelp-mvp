@@ -13,12 +13,11 @@
 @import "components/index";
 @import "pages/index";
 
-$navbar-dark-toggler-border-color:  rgba($white, .1);
-
-
 * {
     box-sizing: border-box;
 }
+
+// APPLICATION MAIN PAGE
 
 .navbar {
     background-color: #FD3438;
@@ -52,6 +51,8 @@ $navbar-dark-toggler-border-color:  rgba($white, .1);
     margin-top: 30px;
 }
 
+//INDEX
+
 .card-body {
     display: flex;
     align-items: center;
@@ -66,4 +67,26 @@ $navbar-dark-toggler-border-color:  rgba($white, .1);
 
 .info-restaurant-link:hover {
     color: white;
+}
+
+//CREATE A RESTAURANT
+
+.form-group input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#new_restaurant {
+    width: 40%;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
