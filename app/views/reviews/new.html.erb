@@ -1,4 +1,4 @@
-<%= form_for [ @restaurant, @review ], class:"create-restaurant-form" do |f| %>
+<%= simple_form_for [ @restaurant, @review ], class:"create-restaurant-form" do |f| %>
   <%= f.input :rating %>
   <%= f.input :content %>
   <%= f.submit "Submit review", class: "btn btn-primary" %>
