@@ -7,17 +7,25 @@
 
 <div class="container">
     <% @restaurants.each do |restaurant| %>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title"><%= restaurant.name.upcase %></h5>
-                <h6 class="card-subtitle mb-2 text-muted"><%= restaurant.category %></h6>
-                <p class="card-text"><%= restaurant.address %></p>
-                <%= link_to "Info", restaurant_path(restaurant), class: "btn btn-danger info-restaurant-link"%>
-            </div>
+    <div class="card">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+            <%= restaurant.name %>
+        </div>
+            <%= link_to "Info", restaurant_path(restaurant), class: "btn info-restaurant-link"%>
         </div>
     <% end %>
 </div>
 
+<div class="footer">
+    <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+    Food Lovers <i class="fas fa-heart"></i>
+    </div>
+</div>
  
-    
-

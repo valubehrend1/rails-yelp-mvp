@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-30.times do
+10.times do
     restaurant = Restaurant.create(
       name:    Faker::Restaurant.name,
       address:  Faker::Address.city,

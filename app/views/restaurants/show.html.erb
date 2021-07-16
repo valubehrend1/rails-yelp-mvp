@@ -1,3 +1,4 @@
+<div class="container">
 <h2><%= @restaurant.name %></h2>
 <p><%= @restaurant.address %></p>
 <ul class="list-group">
@@ -8,3 +9,4 @@
 </ul>
 <%= link_to 'Back', restaurants_path %> 
 <%= link_to "Leave a review", new_restaurant_review_path(@restaurant), class: "btn btn-danger main-btns"%>
+</div>

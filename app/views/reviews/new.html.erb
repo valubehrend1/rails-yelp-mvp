@@ -1,5 +1,10 @@
-<%= simple_form_for [ @restaurant, @review ], class:"create-restaurant-form" do |f| %>
-  <%= f.input :rating %>
-  <%= f.input :content %>
-  <%= f.submit "Submit review", class: "btn btn-danger main-btns" %>
-<% end %>
+
+  <%= simple_form_for [ @restaurant, @review ], class:"create-restaurant-form" do |f| %>
+    <div class="form-group">
+        <%= f.input :rating, class: 'form-control', placeholder:"Rating"%>
+      </div>
+    <div class="form-group">
+      <%= f.input :content, class: 'form-control', placeholder:"Review"%>
+    </div>
+    <%= f.submit "Submit review", class: "btn btn-danger main-btns" %>
+  <% end %>

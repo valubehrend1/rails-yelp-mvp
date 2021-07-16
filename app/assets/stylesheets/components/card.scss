@@ -2,9 +2,12 @@
     background-size: cover;
     background-position: center;
     height: 180px;
+    width: 190px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -13,44 +16,32 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
   }
 
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
+  .card-category:hover {
+    opacity: 80%;
+  }
+
+  .info-restaurant-link {
+    background-color: black;
+    color: white;
+    line-height: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-color: black;
+  }
+
+  .info-restaurant-link:hover {
+    color: white;
   }
   
-  // Smallest device
-  @media (min-width: 100px) and (max-width: 575px) {
-    .cards {
-      grid-template-columns: 1fr;
-    }
-  }
+
+  ////////OLD HTML CARDS////
   
-  // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) {
-    .cards {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
-    .cards {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-    .cards {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-  
-  // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
-    .cards {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-  
+/* <div class="card" style="width: 18rem;">
+<div class="card-body">
+    <h5 class="card-title"><%= restaurant.name.upcase %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= restaurant.category %></h6>
+    <p class="card-text"><%= restaurant.address %></p>
+    <%= link_to "Info", restaurant_path(restaurant), class: "btn btn-danger info-restaurant-link"%>
+</div>
+</div> */
