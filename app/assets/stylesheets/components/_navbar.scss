@@ -1,12 +1,21 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  background-color: #FD3438;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 35px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: rgb(241, 241, 241);
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgb(226, 226, 226);
 }

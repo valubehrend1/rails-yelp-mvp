@@ -1,14 +1,22 @@
-<% @restaurants.each do |restaurant| %>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title"><%= restaurant.name.upcase %></h5>
-            <h6 class="card-subtitle mb-2 text-muted"><%= restaurant.category %></h6>
-            <p class="card-text"><%= restaurant.address %></p>
-            <%= link_to "Info", restaurant_path(restaurant), class: "btn btn-danger info-restaurant-link"%>
-        </div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+    <div class="container">
+    <h1>Food Lovers</h1>
+    <p>For all those are always looking to improve their meals experiences</p>
     </div>
-<% end %>
+</div>
 
+<div class="container">
+    <% @restaurants.each do |restaurant| %>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><%= restaurant.name.upcase %></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%= restaurant.category %></h6>
+                <p class="card-text"><%= restaurant.address %></p>
+                <%= link_to "Info", restaurant_path(restaurant), class: "btn btn-danger info-restaurant-link"%>
+            </div>
+        </div>
+    <% end %>
+</div>
 
  
     

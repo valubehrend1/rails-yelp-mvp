@@ -19,28 +19,6 @@
 
 // APPLICATION MAIN PAGE
 
-.navbar {
-    background-color: #FD3438;
-}
-
-.navbar-brand {
-    font-family: 'Lobster', cursive;
-    color: white;
-    font-size: 35px;
-}
-
-.nav-link {
-    color: white;
-}
-
-.nav-link:hover {
-    color: rgb(241, 241, 241);
-}
-
-.navbar-dark .navbar-toggler {
-    border-color: rgb(226, 226, 226);
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -60,12 +38,12 @@
     flex-direction: column;
 }
 
-.info-restaurant-link {
+.main-btns {
     color: white;
     text-decoration: none;
 }
 
-.info-restaurant-link:hover {
+.main-btns:hover {
     color: white;
 }
 
@@ -77,13 +55,7 @@
     margin-top: 20px;
 }
 
-#new_restaurant {
-    width: 40%;
-}
 
-h1{
-    text-align: center;
-}
 
 .btn-submit {
     display: flex;
